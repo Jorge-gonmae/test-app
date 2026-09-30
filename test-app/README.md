@@ -26,3 +26,38 @@ cd test-app/test-app
 ```
 
 No package installation is required because the application uses Node.js built-in modules only.
+
+## Usage
+
+Start the quiz with:
+
+```bash
+npm start
+```
+
+Follow the prompts to choose a category, select the number of questions, answer each question, and optionally play again.
+
+## Project Structure
+
+```text
+test-app/
+├── data/questions.json  # Quiz categories and questions
+├── index.js              # Application entry point and game loop
+├── package.json          # Project metadata and npm scripts
+└── src/
+    ├── colors.js         # ANSI color helpers
+    ├── input.js          # Readline prompts and selections
+    └── quiz.js           # Quiz state, scoring, and results
+```
+
+## Testing
+
+Run the configured Node.js test command with:
+
+```bash
+npm test
+```
+
+## License
+
+This project is licensed under the MIT License.
